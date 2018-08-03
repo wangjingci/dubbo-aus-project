@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Agent Email</title>
+</head>
+<body style="margin:0;padding:0;box-sizing: border-box;font-family: "Microsoft Yahei", Arial;">
+    <div class="email_content" style="margin:0;padding:0;margin: 50px auto;width: 736px;background: #FFFFFF;border: 1px solid #DDDDDD;">
+        <div class="email_content_title" style="margin:0;padding:0;width: 100%;height: 43px;line-height: 43px;background: #01AE67;">
+            <a href="http://www.tigerz.com" style="margin:0;padding:0;float: left;display: block;">
+                <img style="margin:0;padding:0;margin: 11px 15px 0 75px;width: 122px;height: 21px;display: block" src="http://www.tigerz.com/imgs/version2_logo1.png" alt="logo" title="Houses For Sale in Australia">
+            </a>
+            <p style="margin:0;padding:0;margin: 0;padding: 0;float: left;font-size: 14px;color: #FFFFFF;line-height: 43px">Listing comparison on TigerZ</p>
+        </div>
+        <div class="email_content_main" style="margin:0;padding:0;margin: 0 76px;padding-top: 23px;">
+            <p class="dear" style="margin:0;padding:0;font-size: 14px;font-weight: bold;color: #666462;line-height: 17px;">Dear <span style="margin:0;padding:0;font-size: 14px;font-weight: bold;color: #666462;line-height: 17px;">@agentName</span>,</p>
+            <p class="des" style="margin:0;padding:0;font-size: 14px;font-weight: bold;color: #666462;line-height: 17px;">A customer from TigerZ.com send you a mail to enquire following property, looking forward to your quick reply.</p>
+            <div class="house_main" style="margin:0;padding:0;margin-top: 19px;margin-bottom: 23px;padding: 16px 30px 24px;background: #FFFFFF;border: 1px solid #EBEBEB;border-radius: 2px;">
+                <p class="house_main_title" style="margin:0;padding:0;line-height: 17px;font-size: 14px;color: #C6C6C6;">The property customer follow:</p>
+                <div class="house_main_detail" style="margin:0;padding:0;margin-top: 17px;overflow: hidden;">
+                    <a href="@href" style="margin:0;padding:0;color: #3B475B;">
+                        <img style="margin:0;padding:0;float: left;width: 108px;height: 81px;" src="@mainPhoto" alt="photo">
+                        <div class="house_main_info" style="margin:0;padding:0;float: left; margin-left: 14px;">
+                            <p class="house_main_landArea" style="margin:0;padding:0;margin: 0;font-size: 16px;font-weight: bold;color: #F74B28;line-height: 19px;">@price</p>
+                            <div class="traded_addr_info" style="margin:0;padding:0;margin-top: 11px;margin-bottom: 13px;font-size: 0;">
+                                <span class="traded_info_bed" style="margin:0;padding:0;display: inline-block;vertical-align: middle;font-size: 13px;width: 16px;height: 12px;background: url('http://www.tigerz.com/imgs/version2_detail_bbed.png') no-repeat; background-size: contain; margin: 0 4px 0 0;"></span>
+                                <span style="margin:0;padding:0;display: inline-block;vertical-align: middle;font-size: 13px;">@bed</span>
+                                <span class="traded_info_bath" style="margin:0;padding:0;display: inline-block;vertical-align: middle;font-size: 13px;width: 13px;height: 13px;background: url('http://www.tigerz.com/imgs/version2_detail_bbath.png') no-repeat;background-size: contain;margin: 0 4px 0 9px;"></span>
+                                <span style="margin:0;padding:0;display: inline-block;vertical-align: middle;font-size: 13px;">@bath</span>
+                                <span class="traded_info_parking" style="margin:0;padding:0;display: inline-block;vertical-align: middle;font-size: 13px;width: 17px;height: 11px;background: url('http://www.tigerz.com/imgs/version2_detail_bcar.png') no-repeat;background-size: contain;margin: 0 4px 0 9px;"></span>
+                                <span style="margin:0;padding:0;display: inline-block;vertical-align: middle;font-size: 13px;">@parking</span>
+                            </div>
+                            <p class="house_main_address" style="margin:0;padding:0;line-height: 16px;font-size: 14px;color: #3B475B">@address</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="customer_question" style="margin:0;padding:0;margin: 17px 0 8px 0;padding: 9px 0 25px 10px;background: #FFFFFF;box-shadow: 0 0 4px 0 rgba(0,0,0,0.50);">
+                    <p class="customer_question_title" style="margin:0;padding:0;font-size: 12px;color: #C0C0C0;line-height: 17px;">The question customer enquire:</p>
+                    <p class="customer_question_text" style="margin:0;padding:0;margin-top: 4px;line-height: 17px;font-size: 14px;font-weight: bold;color: #666462;">@message</p>
+                </div>
+                <p class="user_info" style="margin:0;padding:0;color: #C6C6C6;font-size: 12px;margin: 0;padding: 0;margin-bottom: 7px;">Name: @userName&nbsp;&nbsp;&nbsp;&nbsp;Mail: @userEmail&nbsp;&nbsp;&nbsp;&nbsp;Phone: @phone</p>
+                <a class="click_reply" href="mailto:@userEmail;support@tigerz.nz" style="margin:0;padding:0;display: block;width: 100%;height: 43px;line-height: 43px;background: #01AE67;text-align: center;font-size: 16px;color: #FFFFFF;border-radius: 5px;text-decoration: none;">Click to reply</a>
+            </div>
+        </div>
+        <div class="tigerz_email" style="margin:0;padding:0;width: 100%;height: 43px;line-height: 43px;background: #EEEEEE;font-size: 13px;color: #676563;text-align: center;">Please feel free to contact us for any questions with the mail : <a href="mailto:wjc@tigerz.nz" style="margin:0;padding:0;font-size: 13px;color: #01AE67;">wjc@tigerz.nz</a></div>
+        <div class="email_content_footer" style="margin:0;padding:0;height: 43px;
+            line-height: 43px;
+            text-align: center;
+            background: #000000;">
+            <span class="footer_logo" style="margin:0;padding:0;font-size: 16px;
+            font-weight: bold;
+            color: #CCCCCC;">TigerZ </span>
+            <span class="footer_text" style="margin:0;padding:0;font-size: 14px;
+            color: #CCCCCC;">The best property search engine in Austrulia. </span>
+            <a href="http://www.tigerz.com" style="margin:0;padding:0;font-size: 14px;
+            color: #01AE67;">www.tigerz.com</a>
+        </div>
+    </div>
+</body>
+</html>

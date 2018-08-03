@@ -1,0 +1,8 @@
+org.dubbo.spring.boot.tigerz.aus
+org.dubbo.spring.boot.tigerz.aus.aop
+org.dubbo.spring.boot.tigerz.aus.config
+org.dubbo.spring.boot.tigerz.aus.constant
+org.dubbo.spring.boot.tigerz.aus.controller
+org.dubbo.spring.boot.tigerz.aus.dto
+org.dubbo.spring.boot.tigerz.aus.entity
+org.dubbo.spring.boot.tigerz.aus.service

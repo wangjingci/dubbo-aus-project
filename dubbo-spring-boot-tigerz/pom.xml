@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+      <groupId>com.alibaba.boot</groupId>
+      <artifactId>dubbo-spring-boot-parent</artifactId>
+      <version>${revision}</version>
+      <relativePath>../dubbo-spring-boot-parent/pom.xml</relativePath>
+  </parent>
+  
+  <groupId>com.alibaba.boot</groupId>
+  <artifactId>dubbo-spring-boot-tigerz</artifactId>
+  <version>${revision}</version>
+  <name>dubbo-spring-boot-tigerz</name>
+  <url>http://maven.apache.org</url>
+  <packaging>pom</packaging>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <modules>
+    <module>dubbo-spring-boot-tigerz-gm</module>
+    <module>dubbo-spring-boot-tigerz-api</module>
+    <module>dubbo-spring-boot-tigerz-aus</module>
+  </modules>
+  
+  <dependencies>
+     <!-- Spring Boot dependencies -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    
+    <!-- 去掉了，否则引起Cast转化异常，User不能转化为User，太操蛋了 -->
+<!--     <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <optional>true</optional>
+    </dependency> -->
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-actuator</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>dubbo-spring-boot-starter</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>2.7.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+        <version>2.7.0</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>com.tigerz.mongo</groupId>
+        <artifactId>easymongo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+<!-- 非常不好用 -->
+<!--     <dependency> 
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        <version>2.0.0.RELEASE</version>
+    </dependency> -->
+
+    
+
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+</project>
